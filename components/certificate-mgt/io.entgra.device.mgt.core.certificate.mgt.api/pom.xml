@@ -146,6 +146,7 @@
         <dependency>
             <groupId>commons-codec.wso2</groupId>
             <artifactId>commons-codec</artifactId>
+            <scope>provided</scope>
             <exclusions>
                 <exclusion>
                     <groupId>commons-codec</groupId>
@@ -208,10 +209,12 @@
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.orbit.javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
