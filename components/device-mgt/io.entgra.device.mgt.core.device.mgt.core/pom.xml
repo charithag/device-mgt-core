@@ -141,7 +141,7 @@
                             javax.net.ssl,
                             javax.servlet;version="[2.6,3)",
                             javax.sql,
-                            javax.ws.rs,
+                            javax.ws.rs;version="[2.1,3)",
                             javax.xml.bind;version="[0.0,1)",
                             javax.xml.bind.annotation;version="[0.0,1)",
                             javax.xml.parsers;version="${javax.xml.parsers.import.pkg.version}",
