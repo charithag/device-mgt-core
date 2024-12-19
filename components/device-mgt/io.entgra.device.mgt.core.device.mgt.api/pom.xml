@@ -482,5 +482,10 @@
             <artifactId>io.entgra.device.mgt.core.transport.mgt.email.sender.core</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>io.entgra.device.mgt.core</groupId>
+            <artifactId>io.entgra.device.mgt.core.notification.logger</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>
