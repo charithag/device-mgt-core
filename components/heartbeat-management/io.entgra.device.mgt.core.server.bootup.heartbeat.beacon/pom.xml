@@ -64,12 +64,12 @@
                             javax.xml.bind;version="[0.0,1)",
                             javax.xml.bind.annotation;version="[0.0,1)",
                             javax.xml.parsers,
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.osgi.framework.*;version="${imp.package.version.osgi.framework}",
                             org.osgi.service.*;version="${imp.package.version.osgi.service}",
                             org.w3c.dom,
-                            org.wso2.carbon.ndatasource.core;version="[4.8,5)",
-                            org.wso2.carbon.utils;version="[4.8,5)"
+                            org.wso2.carbon.ndatasource.core;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.utils;version="${carbon.kernel.version.range}"
                         </Import-Package>
                         <Export-Package>
                             !io.entgra.device.mgt.core.server.bootup.heartbeat.beacon.internal,

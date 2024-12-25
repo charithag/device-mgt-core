@@ -47,8 +47,8 @@
                         <Private-Package>io.entgra.device.mgt.core.application.mgt.core.internal</Private-Package>
                         <Import-Package>
                             com.dd.plist;version="[1.21,2)",
-                            com.google.gson;version="[2.9,3)",
-                            com.google.gson.reflect;version="[2.9,3)",
+                            com.google.gson;version="${google.gson.version.range}",
+                            com.google.gson.reflect;version="${google.gson.version.range}",
                             io.entgra.device.mgt.core.apimgt.application.extension;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.apimgt.application.extension.dto;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.apimgt.application.extension.exception;version="${io.entgra.device.mgt.core.version.range}",
@@ -106,7 +106,7 @@
                             org.apache.commons.io;version="[2.4,3)",
                             org.apache.commons.lang;version="[2.6,3)",
                             org.apache.commons.lang3;version="[3.12,4)",
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.apache.commons.validator.routines;version="[1.7,2)",
                             <!--org.apache.cxf.jaxrs.ext.multipart;version="[3.5,4)",-->
                             org.apache.http;version="[4.4,5)",
@@ -125,15 +125,15 @@
                             org.wso2.carbon.apimgt.api;version="[9.28,10)",
                             org.wso2.carbon.apimgt.api.model;version="[9.28,10)",
                             org.wso2.carbon.apimgt.impl;version="${carbon.api.mgt.version.range}",
-                            org.wso2.carbon.context;version="[4.8,5)",
-                            org.wso2.carbon.ndatasource.core;version="[4.8,5)",
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.ndatasource.core;version="${carbon.kernel.version.range}",
                             org.wso2.carbon.ntask.common;version="[4.9,5)",
                             org.wso2.carbon.ntask.core;version="[4.9,5)",
                             org.wso2.carbon.ntask.core.service;version="[4.9,5)",
-                            org.wso2.carbon.user.api;version="[1.0,2)",
-                            org.wso2.carbon.user.core.service;version="[4.8,5)",
-                            org.wso2.carbon.utils;version="[4.8,5)",
-                            org.wso2.carbon.utils.dbcreator;version="[4.8,5)",
+                            org.wso2.carbon.user.api;version="${carbon.user.api.version.range}",
+                            org.wso2.carbon.user.core.service;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.utils;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.utils.dbcreator;version="${carbon.kernel.version.range}",
                             org.xml.sax,
                             org.xml.sax.helpers
                         </Import-Package>

@@ -17,7 +17,8 @@
   ~ under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>io.entgra.device.mgt.core</groupId>
         <artifactId>webapp-authenticator-framework</artifactId>
@@ -50,7 +51,7 @@
                             io.entgra.device.mgt.core.webapp.authenticator.framework.*
                         </Export-Package>
                         <Import-Package>
-                            com.google.gson;version="[2.9,3)",
+                            com.google.gson;version="${google.gson.version.range}",
                             com.nimbusds.jose;version="[7.9,8)",
                             com.nimbusds.jose.crypto;version="[7.9,8)",
                             com.nimbusds.jwt;version="[7.9,8)",
@@ -88,7 +89,7 @@
                             org.apache.commons.httpclient;version="[3.1,4)",
                             org.apache.commons.httpclient.params;version="[3.1,4)",
                             org.apache.commons.lang;version="[2.6,3)",
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.apache.commons.pool;version="[1.5,2)",
                             org.apache.commons.pool.impl;version="[1.5,2)",
                             org.apache.coyote;version="[9.0,10)",
@@ -99,21 +100,21 @@
                             org.owasp.encoder;version="[1.2,2)",
                             org.w3c.dom,
                             org.wso2.carbon.base;version="[1.0,2)",
-                            org.wso2.carbon.context;version="[4.8,5)",
-                            org.wso2.carbon.core.util;version="[4.8,5)",
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.core.util;version="${carbon.kernel.version.range}",
                             org.wso2.carbon.identity.oauth2;version="[6.9,7)",
                             org.wso2.carbon.identity.oauth2.dto;version="[6.9,7)",
                             org.wso2.carbon.identity.oauth2.stub;version="[6.9,7)",
                             org.wso2.carbon.identity.oauth2.stub.dto;version="[6.9,7)",
                             org.wso2.carbon.registry.core.exceptions;version="[1.0,2)",
                             org.wso2.carbon.registry.core.service;version="[1.0,2)",
-                            org.wso2.carbon.registry.indexing.service;version="[4.8,5)",
-                            org.wso2.carbon.tomcat.ext.valves;version="[4.8,5)",
-                            org.wso2.carbon.user.api;version="[1.0,2)",
-                            org.wso2.carbon.user.core.service;version="[4.8,5)",
-                            org.wso2.carbon.user.core.tenant;version="[4.8,5)",
-                            org.wso2.carbon.utils;version="[4.8,5)",
-                            org.wso2.carbon.utils.multitenancy;version="[4.8,5)"
+                            org.wso2.carbon.registry.indexing.service;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.tomcat.ext.valves;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.user.api;version="${carbon.user.api.version.range}",
+                            org.wso2.carbon.user.core.service;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.user.core.tenant;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.utils;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.utils.multitenancy;version="${carbon.kernel.version.range}"
                         </Import-Package>
                     </instructions>
                 </configuration>
@@ -168,18 +169,22 @@
         <dependency>
             <groupId>org.wso2.orbit.org.apache.tomcat</groupId>
             <artifactId>tomcat</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.orbit.org.apache.tomcat</groupId>
             <artifactId>tomcat-servlet-api</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon</groupId>
             <artifactId>org.wso2.carbon.tomcat.ext</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.base</artifactId>
+            <scope>provided</scope>
             <exclusions>
                 <exclusion>
                     <groupId>org.opensaml</groupId>
@@ -190,10 +195,12 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.core</artifactId>
+            <scope>provided</scope>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
@@ -204,10 +211,12 @@
         <dependency>
             <groupId>org.wso2.carbon.identity.inbound.auth.oauth2</groupId>
             <artifactId>org.wso2.carbon.identity.oauth</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon</groupId>
             <artifactId>org.wso2.carbon.core.services</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.orbit.com.nimbusds</groupId>
@@ -217,47 +226,53 @@
         <dependency>
             <groupId>io.entgra.device.mgt.core</groupId>
             <artifactId>io.entgra.device.mgt.core.certificate.mgt.core</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.entgra.device.mgt.core</groupId>
             <artifactId>io.entgra.device.mgt.core.device.mgt.core</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>io.entgra.device.mgt.core</groupId>
             <artifactId>io.entgra.device.mgt.core.device.mgt.common</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.orbit.org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.wso2.orbit.org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>commons-pool.wso2</groupId>
             <artifactId>commons-pool</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon.registry</groupId>
             <artifactId>org.wso2.carbon.registry.indexing</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon</groupId>
             <artifactId>org.wso2.carbon.registry.core</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.orbit.org.owasp.encoder</groupId>
             <artifactId>encoder</artifactId>
+            <scope>provided</scope>
         </dependency>
-		<dependency>
-			<groupId>commons-codec.wso2</groupId>
-			<artifactId>commons-codec</artifactId>
-		</dependency>
+        <dependency>
+            <groupId>commons-codec.wso2</groupId>
+            <artifactId>commons-codec</artifactId>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.wso2.orbit.com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -291,10 +306,12 @@
         <dependency>
             <groupId>org.wso2.carbon.identity.inbound.auth.oauth2</groupId>
             <artifactId>org.wso2.carbon.identity.oauth.stub</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon</groupId>
             <artifactId>org.wso2.carbon.base</artifactId>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
     <!-- TODO -->

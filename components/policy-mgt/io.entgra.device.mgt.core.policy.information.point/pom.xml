@@ -56,7 +56,7 @@
                             io.entgra.device.mgt.core.device.mgt.common.policy.mgt;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.policy.information.point,
                             io.entgra.device.mgt.core.policy.mgt.common;version="${io.entgra.device.mgt.core.version.range}",
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.osgi.framework.*;version="${imp.package.version.osgi.framework}"
                         </Import-Package>
                     </instructions>

@@ -18,7 +18,8 @@
   ~ under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>device-mgt-extensions</artifactId>
         <groupId>io.entgra.device.mgt.core</groupId>
@@ -46,26 +47,27 @@
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Bundle-Version>${io.entgra.device.mgt.core.version}</Bundle-Version>
                         <Bundle-Description>IOT - User store role mapping Module</Bundle-Description>
-                        <Private-Package>io.entgra.device.mgt.core.device.mgt.extensions.userstore.role.mapper.internal</Private-Package>
+                        <Private-Package>
+                            io.entgra.device.mgt.core.device.mgt.extensions.userstore.role.mapper.internal
+                        </Private-Package>
                         <Import-Package>
-                            org.osgi.framework.*;version="${imp.package.version.osgi.framework}",
-                            org.osgi.service.*;version="${imp.package.version.osgi.service}",
-                            org.apache.commons.logging,
-                            org.apache.axis2.*;version="${axis2.osgi.version.range}",
-                            org.wso2.carbon.core,
-                            org.wso2.carbon.utils.*,
-                            javax.xml.bind;resolution:=optional,
-                            javax.xml.bind.annotation,
+                            org.osgi.framework;version="${imp.package.version.osgi.framework}",
+                            org.osgi.service.component;version="${imp.package.version.osgi.service}",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
+                            org.wso2.carbon.core;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.utils;version="${carbon.kernel.version.range}",
+                            javax.xml.bind;resolution:=optional;version="[0.0,1 )",
+                            javax.xml.bind.annotation;version="[0.0,1)",
                             javax.xml.parsers,
                             org.w3c.dom,
-                            org.wso2.carbon,
-                            org.wso2.carbon.context,
-                            org.wso2.carbon.user.api,
-                            org.wso2.carbon.user.core.common,
-                            org.wso2.carbon.user.core.service,
-                            org.wso2.carbon.user.mgt.common,
-                            io.entgra.device.mgt.core.server.bootup.heartbeat.beacon.service,
-                            io.entgra.device.mgt.core.server.bootup.heartbeat.beacon.exception
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.user.api;version="${carbon.user.api.version.range}",
+                            org.wso2.carbon.user.core.service;version="${carbon.kernel.version.range}" ,
+                            io.entgra.device.mgt.core.server.bootup.heartbeat.beacon.service;version="${io.entgra.device.mgt.core.version.range}",
+                            io.entgra.device.mgt.core.server.bootup.heartbeat.beacon.exception;version="${io.entgra.device.mgt.core.version.range}",
+                            org.wso2.carbon;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.user.core.common;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.user.mgt.common;version="${carbon.user.mgt.common.version.range}",
                         </Import-Package>
                         <Export-Package>
                             !io.entgra.device.mgt.core.device.mgt.extensions.userstore.role.mapper.internal,
@@ -100,19 +102,19 @@
                     </execution>
                 </executions>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <configuration>-->
-<!--                    <systemPropertyVariables>-->
-<!--                        <log4j.configuration>file:src/test/resources/carbon-home/repository/conf/log4j.properties-->
-<!--                        </log4j.configuration>-->
-<!--                    </systemPropertyVariables>-->
-<!--                    <suiteXmlFiles>-->
-<!--                        <file>src/test/resources/testng.xml</file>-->
-<!--                    </suiteXmlFiles>-->
-<!--                </configuration>-->
-<!--            </plugin>-->
+            <!--            <plugin>-->
+            <!--                <groupId>org.apache.maven.plugins</groupId>-->
+            <!--                <artifactId>maven-surefire-plugin</artifactId>-->
+            <!--                <configuration>-->
+            <!--                    <systemPropertyVariables>-->
+            <!--                        <log4j.configuration>file:src/test/resources/carbon-home/repository/conf/log4j.properties-->
+            <!--                        </log4j.configuration>-->
+            <!--                    </systemPropertyVariables>-->
+            <!--                    <suiteXmlFiles>-->
+            <!--                        <file>src/test/resources/testng.xml</file>-->
+            <!--                    </suiteXmlFiles>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
         </plugins>
     </build>
 

@@ -197,7 +197,7 @@
                             io.entgra.device.mgt.core.device.mgt.extensions.*
                         </Export-Package>
                         <Import-Package>
-                            com.google.gson;version="[2.9,3)",
+                            com.google.gson;version="${google.gson.version.range}",
                             io.entgra.device.mgt.core.device.mgt.common;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.device.mgt.common.app.mgt;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.device.mgt.common.configuration.mgt;version="${io.entgra.device.mgt.core.version.range}",
@@ -230,23 +230,23 @@
                             javax.xml.parsers;version="${javax.xml.parsers.import.pkg.version}",
                             javax.xml.stream;version="[1.0,2)",
                             org.apache.commons.lang;version="[2.6,3)",
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.osgi.framework.*;version="${imp.package.version.osgi.framework}",
                             org.osgi.service.*;version="${imp.package.version.osgi.service}",
                             org.w3c.dom,
-                            org.wso2.carbon.context;version="[4.8,5)",
-                            org.wso2.carbon.governance.api.exception;version="[4.8,5)",
-                            org.wso2.carbon.governance.api.generic;version="[4.8,5)",
-                            org.wso2.carbon.governance.api.generic.dataobjects;version="[4.8,5)",
-                            org.wso2.carbon.governance.api.util;version="[4.8,5)",
-                            org.wso2.carbon.ndatasource.core;version="[4.8,5)",
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.governance.api.exception;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.governance.api.generic;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.governance.api.generic.dataobjects;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.governance.api.util;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.ndatasource.core;version="${carbon.kernel.version.range}",
                             org.wso2.carbon.registry.api;version="[1.0,2)",
                             org.wso2.carbon.registry.core;version="[1.0,2)",
                             org.wso2.carbon.registry.core.exceptions;version="[1.0,2)",
                             org.wso2.carbon.registry.core.service;version="[1.0,2)",
                             org.wso2.carbon.registry.core.session;version="[1.0,2)",
-                            org.wso2.carbon.utils;version="[4.8,5)",
-                            org.wso2.carbon.utils.dbcreator;version="[4.8,5)"
+                            org.wso2.carbon.utils;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.utils.dbcreator;version="${carbon.kernel.version.range}"
                         </Import-Package>
 						<DynamicImport-Package>io.entgra.device.mgt.core.device.mgt.extensions.pull.notification,
 							io.entgra.device.mgt.core.device.mgt.extensions.pull.notification.*</DynamicImport-Package>

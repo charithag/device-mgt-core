@@ -118,12 +118,12 @@
                             io.entgra.device.mgt.core.device.mgt.extensions.push.notification.provider.http.*
                         </Export-Package>
                         <Import-Package>
-                            com.google.gson;version="[2.9,3)",
+                            com.google.gson;version="${google.gson.version.range}",
                             io.entgra.device.mgt.core.device.mgt.common.exceptions;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.device.mgt.common.push.notification;version="${io.entgra.device.mgt.core.version.range}",
                             org.apache.commons.httpclient;version="[3.1,4)",
                             org.apache.commons.httpclient.methods;version="[3.1,4)",
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.osgi.service.*;version="${imp.package.version.osgi.service}"
                         </Import-Package>
                     </instructions>

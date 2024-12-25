@@ -61,7 +61,7 @@
                             org.apache.axis2.description;version="[1.6,2)",
                             org.apache.axis2.engine;version="[1.6,2)",
                             org.apache.commons.io;version="[2.4,3)",
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.apache.velocity;version="[2.3,3)",
                             org.apache.velocity.app;version="[2.3,3)",
                             org.apache.velocity.context;version="[2.3,3)",
@@ -72,8 +72,8 @@
                             org.osgi.framework.*;version="${imp.package.version.osgi.framework}",
                             org.osgi.service.*;version="${imp.package.version.osgi.service}",
                             org.w3c.dom,
-                            org.wso2.carbon.context;version="[4.8,5)",
-                            org.wso2.carbon.utils;version="[4.8,5)"
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.utils;version="${carbon.kernel.version.range}"
                         </Import-Package>
                         <Export-Package>
                             !io.entgra.device.mgt.core.transport.mgt.email.sender.core.internal,

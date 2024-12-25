@@ -154,16 +154,16 @@
                             org.apache.axis2.deployment;version="[1.6,2)",
                             org.apache.axis2.deployment.repository.util;version="[1.6,2)",
                             org.apache.axis2.engine;version="[1.6,2)",
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.osgi.framework.*;version="${imp.package.version.osgi.framework}",
                             org.osgi.service.*;version="${imp.package.version.osgi.service}",
-                            org.w3c.dom,org.wso2.carbon.application.deployer;version="[4.8,5)",
-                            org.wso2.carbon.application.deployer.config;version="[4.8,5)",
-                            org.wso2.carbon.application.deployer.handler;version="[4.8,5)",
-                            org.wso2.carbon.context;version="[4.8,5)",
-                            org.wso2.carbon.ndatasource.core;version="[4.8,5)",
+                            org.w3c.dom,org.wso2.carbon.application.deployer;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.application.deployer.config;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.application.deployer.handler;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.ndatasource.core;version="${carbon.kernel.version.range}",
                             org.wso2.carbon.registry.core.service;version="[1.0,2)",
-                            org.wso2.carbon.utils;version="[4.8,5)"
+                            org.wso2.carbon.utils;version="${carbon.kernel.version.range}"
                         </Import-Package>
                         <Axis2Deployer>DeviceTypeDeployer</Axis2Deployer>
                     </instructions>

@@ -56,17 +56,17 @@
                             io.entgra.device.mgt.core.task.mgt.core.util;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.task.mgt.watcher,
                             io.entgra.device.mgt.core.task.mgt.watcher.internal,
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.osgi.framework.*;version="${imp.package.version.osgi.framework}",
                             org.osgi.service.*;version="${imp.package.version.osgi.service}",
-                            org.wso2.carbon.context;version="[4.8,5)",
-                            org.wso2.carbon.core;version="[4.8,5)",
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.core;version="${carbon.kernel.version.range}",
                             org.wso2.carbon.ntask.common;version="[4.9,5)",
                             org.wso2.carbon.ntask.core;version="[4.9,5)",
                             org.wso2.carbon.ntask.core.service;version="[4.9,5)",
-                            org.wso2.carbon.user.api;version="[1.0,2)",
-                            org.wso2.carbon.user.core.service;version="[4.8,5)",
-                            org.wso2.carbon.user.core.tenant;version="[4.8,5)"
+                            org.wso2.carbon.user.api;version="${carbon.user.api.version.range}",
+                            org.wso2.carbon.user.core.service;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.user.core.tenant;version="${carbon.kernel.version.range}"
                         </Import-Package>
                         <Export-Package>
                             io.entgra.device.mgt.core.task.mgt.watcher.*

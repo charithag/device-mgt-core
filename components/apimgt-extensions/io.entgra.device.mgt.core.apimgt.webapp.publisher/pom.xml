@@ -164,8 +164,8 @@
                             io.entgra.device.mgt.core.apimgt.webapp.publisher.*
                         </Export-Package>
                         <Import-Package>
-                            com.google.gson;version="[2.9,3)",
-                            com.google.gson.reflect;version="[2.9,3)",
+                            com.google.gson;version="${google.gson.version.range}",
+                            com.google.gson.reflect;version="${google.gson.version.range}",
                             io.entgra.device.mgt.core.apimgt.annotations;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.apimgt.extension.rest.api.*,
                             io.entgra.device.mgt.core.apimgt.webapp.publisher.config,
@@ -185,7 +185,7 @@
                             org.apache.catalina;version="${catalina.version.range}",
                             org.apache.catalina.core;version="${catalina.version.range}",
                             org.apache.commons.lang;version="[2.6,3)",
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.json;version="[3.0,4)",
                             org.osgi.framework.*;version="${imp.package.version.osgi.framework}",
                             org.osgi.service.*;version="${imp.package.version.osgi.service}",
@@ -196,14 +196,14 @@
                             org.wso2.carbon.apimgt.api.model;version="[9.28,10)",
                             org.wso2.carbon.apimgt.impl;version="[9.28,10)",
                             org.wso2.carbon.apimgt.impl.utils;version="[9.28,10)",
-                            org.wso2.carbon.context;version="[4.8,5)",
-                            org.wso2.carbon.core;version="[4.8,5)",
-                            org.wso2.carbon.core.util;version="[4.8,5)",
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.core;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.core.util;version="${carbon.kernel.version.range}",
                             org.wso2.carbon.registry.core.service,
                             org.wso2.carbon.user.api,
-                            org.wso2.carbon.user.core.service;version="[4.8,5)",
-                            org.wso2.carbon.user.core.tenant;version="[4.8,5)",
-                            org.wso2.carbon.utils;version="[4.8,5)"
+                            org.wso2.carbon.user.core.service;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.user.core.tenant;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.utils;version="${carbon.kernel.version.range}"
                         </Import-Package>
                         <Embed-Dependency>
                             jsr311-api;scope=compile|runtime;inline=false

@@ -58,17 +58,17 @@
                             io.entgra.device.mgt.core.tenant.mgt.common.exception;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.tenant.mgt.common.spi;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.tenant.mgt.core,
-                            org.apache.commons.logging;version="[1.2,2)",
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
                             org.osgi.framework;version="${imp.package.version.osgi.framework}",
                             org.osgi.service.component;version="${imp.package.version.osgi.service}",
-                            org.wso2.carbon.context;version="[4.8,5)",
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
                             org.wso2.carbon.registry.core.exceptions;version="[1.0,2)",
                             org.wso2.carbon.stratos.common.beans;version="[4.9,5)",
                             org.wso2.carbon.stratos.common.exception;version="[4.9,5)",
                             org.wso2.carbon.stratos.common.listeners;version="[4.9,5)",
                             org.wso2.carbon.tenant.mgt.services,
-                            org.wso2.carbon.user.api;version="[1.0,2)",
-                            org.wso2.carbon.user.core.service;version="[4.8,5)"
+                            org.wso2.carbon.user.api;version="${carbon.user.api.version.range}",
+                            org.wso2.carbon.user.core.service;version="${carbon.kernel.version.range}"
                         </Import-Package>
                         <Export-Package>
                             !io.entgra.device.mgt.core.tenant.mgt.core.internal,

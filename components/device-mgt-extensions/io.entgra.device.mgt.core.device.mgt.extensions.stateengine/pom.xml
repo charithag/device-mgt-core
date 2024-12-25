@@ -49,10 +49,10 @@
                             io.entgra.device.mgt.core.device.mgt.common;version="${io.entgra.device.mgt.core.version.range}",
                             io.entgra.device.mgt.core.device.mgt.extensions.stateengine.dto,
                             io.entgra.device.mgt.core.device.mgt.extensions.stateengine.exception,
-                            org.apache.commons.logging;version="[1.2,2)",
-                            org.wso2.carbon.context;version="[4.8,5)",
-                            org.wso2.carbon.user.api;version="[1.0,2)",
-                            org.wso2.carbon.user.core.service;version="[4.8,5)"
+                            org.apache.commons.logging;version="${commons.logging.version.range}",
+                            org.wso2.carbon.context;version="${carbon.kernel.version.range}",
+                            org.wso2.carbon.user.api;version="${carbon.user.api.version.range}",
+                            org.wso2.carbon.user.core.service;version="${carbon.kernel.version.range}"
                         </Import-Package>
                         <Export-Package>
                             io.entgra.device.mgt.core.device.mgt.extensions.stateengine.*,

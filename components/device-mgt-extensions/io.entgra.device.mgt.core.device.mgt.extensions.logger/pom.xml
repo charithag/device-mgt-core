@@ -46,7 +46,7 @@
                         <Bundle-Description>Entgra Logger Bundle</Bundle-Description>
                         <Import-Package>
                             io.entgra.device.mgt.core.device.mgt.extensions.logger,
-                            org.apache.commons.logging;version="[1.2,2)"
+                            org.apache.commons.logging;version="${commons.logging.version.range}"
                         </Import-Package>
                         <Export-Package>
                             io.entgra.device.mgt.core.device.mgt.extensions.logger.*

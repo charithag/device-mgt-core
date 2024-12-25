@@ -47,7 +47,6 @@
                         <Bundle-Description>CEA Management Common Bundle</Bundle-Description>
                         <Import-Package>
                             org.apache.commons.logging,
-                            io.entgra.device.mgt.core.device.mgt.common.*
                         </Import-Package>
                         <Export-Package>
                             io.entgra.device.mgt.core.cea.mgt.common.*
